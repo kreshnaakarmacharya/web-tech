@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            color: red;
+            font-size: 25px;
+        }
+        .second{
+            color: blue;
+        }
+        .third{
+            background-color: yellow;
+        }
+        .before::before{
+            content: "Before:Added Hi!";
+            color: blue;
+        }
+        .after::after{
+            content: "After:Added Bye";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-element Selector</h1>
+    <p>Here is an examples of using all the basic Pseudo-element selectors:</p>
+    <p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed non risus.Suspendisse lectus tortor,<br>
+        dignissim sit amet,adupiscing nec,ultricies sed,dolor.
+    </p>
+    <p class="second">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed non risus.Suspendisse lectus tortor,
+        dignissim sit amet,adupiscing nec,ultricies sed,dolor.</p>
+    <p class="third">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed non risus.Suspendisse lectus tortor,
+        dignissim sit amet,adupiscing nec,ultricies sed,dolor.</p>
+    <p class="forth">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed non risus.Suspendisse lectus tortor,
+        dignissim sit amet,adupiscing nec,ultricies sed,dolor.</p>
+    <p>Before and after :</p>  
+    <p class="before">Before</p>
+    <p class="after">After</p>
+</body>
+</html>

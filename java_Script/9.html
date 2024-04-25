@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        class Car {
+            constructor(model, makeYear) {
+                this.model = model;
+                this.makeYear = makeYear;
+             }
+
+   
+            displayInfo() {
+                document.write(`Car Model: ${this.model}`);
+                document.write(`Make Year: ${this.makeYear}`);
+            }
+
+            
+            calculateAge(currentYear) {
+                let age = currentYear - this.makeYear;
+                document.write(`Car Age: ${age} years`);
+            }
+        }   
+        let myCar = new Car('Toyota', 2018);
+
+        myCar.displayInfo();
+
+        let currentYear = new Date().getFullYear();
+        myCar.calculateAge(currentYear);
+
+    </script>
+</body>
+</html>

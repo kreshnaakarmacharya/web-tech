@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstNumber=parseInt(prompt("Enter a number :"));
+        var secondNumber=parseInt(prompt("Enter a number :"));
+
+        if(!isNaN(firstNumber) && !isNaN(secondNumber))
+        {
+            var result=addPrimeNumber(firstNumber,secondNumber);
+            document.write(result);
+        }
+        else{
+            document.write("Enter valid Number");
+        }
+
+         function isPrime(number){
+            if(number<=1)
+            {
+                return false;
+            }
+
+            for(i=2;i<=Math.sqrt(number);i++)
+            {
+                if(number%2==0)
+                {
+                    return false;
+                }
+            }
+            return true;
+         }
+         function addPrimeNumber(num1,num2)
+         {
+            if(isPrime(num1)&& isPrime(num2))
+            {
+                var addition=num1+num2;
+            }
+            return addition;
+         }
+    </script>
+</body>
+</html>

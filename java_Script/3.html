@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstNumber=parseInt(prompt("Enter a number :"));
+        var secondNumber=parseInt(prompt("Enter a number :"));
+        var result=numberDifference(firstNumber,secondNumber);
+        document.write(result);
+
+        function numberDifference(number1,number2){
+            if(number1%2==0 && number2%2==0)
+            {
+                var diff=number1-number2;
+            }
+            return diff;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today=new Date();
+        
+        let targetDate=new Date('2015-02-12');
+        if(today<targetDate.getTime()){
+            alert("Today is before 2015-02-12");
+        }
+        else if(today> targetDate.getTime())
+        {
+            alert("Today is after 2015-02-12")
+        }
+        else{
+            alert('today is 2015-02-12')
+        }
+    </script>
+</body>
+</html>

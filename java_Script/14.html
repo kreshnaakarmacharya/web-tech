@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Animation</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+    // Initial position of the car
+    let carPosition = 0;
+
+    // Function to move the car forward
+    $('#forwardButton').click(function() {
+        carPosition += 100; // Move 100 pixels forward
+        $('#car').animate({ left: carPosition }, 1000, 'linear');
+    });
+
+    // Function to stop the car
+    $('#stopButton').click(function() {
+        $('#car').stop(); // Stop the current animation
+    });
+
+    // Function to move the car in reverse
+    $('#reverseButton').click(function() {
+        carPosition -= 100; // Move 100 pixels in reverse
+        $('#car').animate({ left: carPosition }, 1000, 'linear');
+    });
+});
+</script>
+<style>
+    #car {
+        width: 100px;
+        height: 50px;
+        background-color: blue;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+</style>
+</head>
+<body>
+    <div id="car"></div>
+    <button id="forwardButton">Forward</button>
+    <button id="stopButton">Stop</button>
+    <button id="reverseButton">Reverse</button>
+    
+</body>
+</html>

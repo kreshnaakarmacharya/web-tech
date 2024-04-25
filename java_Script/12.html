@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cookie Example</title>
+</head>
+<body>
+    <script>
+        // Function to set a cookie with a name and password
+        function setCookie(name, password) {
+            document.cookie = `${name}=${password}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+        }
+
+        // Function to get the cookie by name
+        function getCookie(name) {
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let cookies = decodedCookie.split(';');
+            for (let cookie of cookies) {
+                let [cookieName, cookieValue] = cookie.trim().split('=');
+                if (cookieName === name) {
+                    return cookieValue;
+                }
+            }
+            return null;
+        }
+
+        // Set the cookie with a name and password
+        setCookie('username', 'examplePassword');
+
+        // Get the cookie by name and display it
+        let usernameCookie = getCookie('username');
+        if (usernameCookie) {
+            console.log('Cookie:', usernameCookie);
+            alert('Cookie: ' + usernameCookie);
+        } else {
+            console.log('Cookie not found.');
+            alert('Cookie not found.');
+        }
+    </script>
+</body>
+</html>

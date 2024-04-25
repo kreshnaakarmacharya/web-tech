@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string1=prompt("Enter a string :");
+        var string2=prompt("Enter a string :");
+
+        if(string1 && string2 !=null)
+        {
+            compareString(string1,string2);
+        }
+        else{
+            console.log("Enter the valid string");
+        }
+
+        function compareString(str1,str2)
+        {
+            if(str1==str2)
+            {
+                console.log("string are equal.");
+                if(str1 && str2.toUpperCase()){
+                    document.write("First string is in uppperCase.")
+                }
+            }
+            else{
+                document.write("String are not equal.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            color: blue;
+            font-weight: bold;
+        }
+        .b{
+            color: blue;
+            font-weight: bold;
+        }
+        .c{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Survey Form</legend>
+        <h1>Contact Information</h1>
+        <div class="a">
+        Email Address:
+        <input type="email" name="Email" id="Email"> <br>
+        First Name:
+        <input type="text" name="First name" id="First name"> <br>
+        Last Name:
+        <input type="text" name="Last name" id="Last name"> <br>
+    </div>
+    <h2>Geographic Information</h2>
+    <div class="b">
+        State:
+        <input type="text" name="State" id="State"> <br>
+        Zip Code:
+        <input type="text" name="Zip Code" id="Zip Code">
+    </div>
+    <h3>How did you hear about us</h3>
+    <input type="radio" name="websearch" id="search" value="websearch"> websearch <br>
+    <input type="radio" name="facebook" id="facebook" value="facebook"> facebook <br>
+    <input type="radio" name="twitter" id="twitter" value="twitter"> twitter <br>
+    <input type="radio" name="email message" id="email message"> email message <br>
+    <h4>Any suggestion</h4>
+       <input type="text" name="suggestion" id="suggestion" class="c">
+<h5>Thank You for taking our survey. </h5>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+   
+    </fieldset>
+</body>
+</html>
