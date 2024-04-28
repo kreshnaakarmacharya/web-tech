@@ -5,48 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-image: url(image.jpeg);
-            background-attachment:scroll;
-            background-repeat:no-repeat;
+        body {
+            background: url(image.jpeg) no-repeat;
+            background-attachment: scroll;
         }
-        /* body{
-            background-image: url(image.jpeg);
-            background-attachment:fixed;
-            background-repeat:no-repeat;
+        h1, p {
+            margin: 0; /* Remove default margins */
         }
-        body{
-            background-image: url(image.jpeg);
-            background-attachment:repeat;
-            background-repeat:no-repeat;
-        } */
     </style>
 </head>
 <body>
-        <h1>Hello World</h1>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        <p>This is a paragraph.</p>
-        
+    <h1>Hello World</h1>
+    <script>
+        for (let i = 0; i < 50; i++) {
+            document.write("<p>This is a paragraph.</p>")
+        }
+    </script>
 </body>
 </html>

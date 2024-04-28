@@ -7,21 +7,24 @@
 </head>
 <body>
     <script>
-        var person1=new person("John","doe");
-        document.write("before :",person1.firstname,person1.lastname);
 
-        function person(firstname,lastname)
-        {
-            this.firstname=firstname;
-            this.lastname=lastname;
+        
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
 
-            this.changelastname=function(newlastname)
-            {
-                this.lastname=newlastname;
-            }
-        }
-        person1.changelastname("Smith");
-        document.write("after :",person1.firstname,person1.lastname);
+    this.changeLastName = function(newLastName) {
+        this.lastName = newLastName;
+    };
+}
+
+    let firstName = prompt("provide your First Name : ");
+    let lastname = prompt("Provide your Last Name : ");
+    let newLastName = prompt("Check Check provide Newlastname : ");
+    let person = new Person(firstName,lastname);
+    document.write("Before:", person.firstName, person.lastName,"<br>");
+    person.changeLastName(newLastName);
+    document.write("After:", person.firstName, person.lastName);  
     </script>
 </body>
 </html>

@@ -1,53 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .a{
-            color: aqua;
-        }
-        .b
-        {
-            height: 100px;
-        }
+        .a { color: aqua; }
+        .b { height: 100px; }
     </style>
 </head>
 <body>
-   <form action="" method="get">
+   <form>
     <fieldset>
-    <legend>Personal car Information</legend>
-    <div class="a">
-    Full name: 
-    <input type="text" name="First name" id="First name" placeholder="Your fullname"> <br>
-</div>
-    Current City:
-    <input type="text" name="Current city" id="Current City" placeholder="where is your city"> <br>
-    Email:
-    <input type="email" name="Email" id="Email" placeholder="example@gmail.com"> <br>
-    phone:
-    <input type="tel" name="phone" id="phone" placeholder="9*********" pattern="9[0-9]{9}"> <br>
-    Gender:
-    <input type="radio" name="Gender" id="Gender" value="Male" >Male
-    <input type="radio" name="Gender" id="Gender" value="Female" >Female <br>
-    Birthday:
-    <input type="date" name="Birthday" id="Birthday"> <br>
+    <legend>Personal Car Information</legend>
+    <div class="a">Full name: <input type="text" name="fullname" placeholder="Your fullname"></div>
+    Current City: <input type="text" name="city" placeholder="Where is your city"><br>
+    Email: <input type="email" name="email" placeholder="example@gmail.com"><br>
+    Phone: <input type="tel" name="phone" placeholder="9*********" pattern="9[0-9]{9}"><br>
+    Gender: <input type="radio" name="gender" value="Male"> Male <input type="radio" name="gender" value="Female"> Female <br>
+    Birthday: <input type="date" name="birthday"><br>
     Choose Car Company:
-   <select>
-    <option value="Jeep">Jeep</option>
-    <option value="Honda">Car</option>
-    <option value="Bmw"></option>
-    <option value="Audi">Audi</option>
-   </select> <br>
- 
-   Additional Information: <br>
-   <input type="text" name="additional information" class="b"> <br>
-   <input type="checkbox" value="I agree to the terms and policy.">I agree to the terms and policy. <br>
-   <input type="submit" value="submit">
-   <input type="Reset" value="Reset">
-</fieldset>
+    <select>
+        <option value="Jeep">Jeep</option>
+        <option value="Honda">Honda</option>
+        <option value="Bmw">BMW</option>
+        <option value="Audi">Audi</option>
+    </select><br>
+    Additional Information: <br>
+    <input type="text" name="additional_information" class="b"><br>
+    <input type="checkbox" value="I agree to the terms and policy."> I agree to the terms and policy. <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </fieldset>
    </form>
 </body>
 </html>
